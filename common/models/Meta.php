@@ -77,6 +77,7 @@ abstract class Meta extends \yii\db\ActiveRecord
     }
 
     public function checkNameExist($attribute, $params){
+        $this->type = static::TYPE;
         if (!$this->hasErrors()) {
             $model=self::findOne([$attribute=>$this->$attribute,'type'=>$this->type]);
 

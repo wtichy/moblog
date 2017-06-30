@@ -4,9 +4,9 @@ $config= [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=192.168.10.10;dbname=blog',
+            'dsn' => 'mysql:host=127.0.0.1;dbname=mblog',
             'username' => 'root',
-            'password' => '123456',
+            'password' => 'root',
             'charset' => 'utf8',
             'tablePrefix'=>'moblog_',
         ],
